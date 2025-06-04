@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f78e43;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 50px;
+    width: 70px;
+    border-radius: 8px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f87731;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #a24713;
+}
+
+/* Ícones de Menu */
+.menu-item i {
+    margin-right: 8px;
+}
+
+/* Status message */
+#status-message {
+    background-color: #e0ffe0;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* Destaque */
+.destaque {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f3e2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header_title {
+    font-size: 3em;
+    color: #ffebd8;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 20px;
+    border: #fcd69d 3px 3px 3px;
+    text-shadow: 
+        2px 2px 0px #ff9100,   /* contorno superior e à direita */
+        -2px -2px 0px #ff9100, /* contorno inferior e à esquerda */
+        2px -2px 0px #ff9100,  /* contorno superior e à esquerda */
+        -2px 2px 0px #ff9100;  /* contorno inferior e à direita */
+}
+
+
+.destaque-resumo img {
+    margin-right: 600px;
+}
+
+.destaque p {
+    font-family: Georgia, serif;
+    font-size: 1.7em;
+    color: #333;
+    max-width: 400px;
+    margin: 20px auto;
+    margin-top: 100px;
+    margin-right: -700px;
+    position: absolute;
+    background-color: rgba(230, 218, 218, 0.308);
+    
+}
+
+.destaque img {
+    width: 70%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.destaque-resumo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cardápio */
+.cardapio {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardapio .card-food img {
+    width: 100%; /* A largura será de 100% do contêiner do card */
+    height: 200px; /* Definindo a altura fixa */
+    object-fit: cover; /* A imagem vai cobrir a área do card, sem distorcer */
+    border-radius: 10px; /* Manter bordas arredondadas */
+}
+
+.cardapio h2 {
+    font-size: 2em;
+    color: #d2691e;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.cardapio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.card-food {
+    width: 300px;
+    padding: 15px;
+    background-color: #fff8ec;
+    border: 1px solid #e0d4c1;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Botão Adicionar ao Pedido */
+.btn-order {
+    background-color: #d2691e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-order:hover {
+    background-color: #a24713;
+}
+
+/* Rodapé */
+footer {
+    background-color: #d2691e;
+    color: white;
+    text-align: center;
+
+    padding: 10px;
+}

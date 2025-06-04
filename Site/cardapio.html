@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Padaria - Cardápio</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="header_title">Crunch Bake</h1>
+        <div class="header-logo">
+            <img src="img1.jpg" alt="Logo da Padaria">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../Site/Minha Padaria.html">Página Inicial</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Trabalhe Conosco</a></li>
+                <li><a href="#">Conta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cardapio">
+        <h2>Cardápio</h2>
+        <img src="padaria02.png" alt="Imagem ilustrativa do cardápio">
+        <h3>Lanches</h3>
+        <div class="card">
+            <div class="card-food">
+                <img src="../Site/imagens/comida/lanche de forno.jpg">
+                <h4>Lanche do Forno</h4>
+                <p>Pão artesanal com recheio de presunto e queijo derretido.</p>
+                <button class="btn-order" onclick="addToCart('Lanche do Forno')">Adicionar ao Pedido</button>
+            </div>
+            <div class="card-food">
+                <img src="../Site/imagens/comida/lanche classico.jpeg">
+                <h4>Lanche Clássico</h4>
+                <p>Pão francês fresquinho com mortadela e queijo.</p>
+                <button class="btn-order" onclick="addToCart('Lanche Clássico')">Adicionar ao Pedido</button>
+            </div>
+            <div class="card-food">
+                <img src="../Site/imagens/comida/x bacon.jpg">
+                <h4>Lanche Bacon & Queijo</h4>
+                <p>Pão crocante recheado com bacon e queijo prato.</p>
+                <button class="btn-order" onclick="addToCart('Lanche Bacon & Queijo')">Adicionar ao Pedido</button>
+            </div>
+        </div>
+
+        <h3>Refeições</h3>
+        <div class="card">
+            <div class="card-food">
+                <img src="../Site/imagens/comida/frango assado.jpg">
+                <h4>Frango Assado com Batatas</h4>
+                <p>Frango temperado assado acompanhado de batatas douradas.</p>
+                <button class="btn-order" onclick="addToCart('Frango Assado com Batatas')">Adicionar ao Pedido</button>
+            </div>
+            <div class="card-food">
+                <img src="../Site/imagens/comida/feijoada.png">
+                <h4>Feijoada</h4>
+                <p>Tradicional feijoada brasileira com arroz, couve e laranja.</p>
+                <button class="btn-order" onclick="addToCart('Feijoada')">Adicionar ao Pedido</button>
+            </div>
+            <div class="card-food">
+                <img src="../Site/imagens/comida/marmita fit.jpg">
+                <h4>Marmita Fit</h4>
+                <p>Peito de frango grelhado, arroz integral e legumes no vapor.</p>
+                <button class="btn-order" onclick="addToCart('Marmita Fit')">Adicionar ao Pedido</button>
+            </div>
+            <div class="card-food">
+                <img src="../Site/imagens/comida/strogonoff.jpg">
+                <h4>Strogonoff de Carne</h4>
+                <p>Carne ao molho cremoso de strogonoff com arroz e batata palha.</p>
+                <button class="btn-order" onclick="addToCart('Strogonoff de Carne')">Adicionar ao Pedido</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Minha Padaria - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para adicionar item ao carrinho
+        function addToCart(item) {
+            alert(item + " foi adicionado ao seu pedido!");
+        }
+    </script>
+</body>
+</html>
